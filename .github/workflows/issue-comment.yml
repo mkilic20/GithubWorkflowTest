@@ -1,5 +1,4 @@
 name: Comment on New Issue
-
 on:
   issues:
     types: [opened]
