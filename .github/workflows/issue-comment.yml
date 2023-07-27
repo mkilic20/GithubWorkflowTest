@@ -28,8 +28,7 @@ jobs:
         run: |
           gh api -X POST \
             https://api.github.com/repo/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments \
-              -f body:' 
-              Comment from the api call '
+              -f body:' Comment from the api call '
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           ORGANIZATION: ${{github.event.organization.login}}
